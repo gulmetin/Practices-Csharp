@@ -1,0 +1,20 @@
+using System;
+
+namespace returnfactorial
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            long total=1;
+            Console.WriteLine("Enter the number whose factorial you want to find:");
+            int factorial = Convert.ToInt32(Console.ReadLine());
+            for(int i=1;i<=factorial;i++)
+            {
+                total = total * i;
+            }
+            Console.WriteLine("{0}! = {1}", factorial, total);
+            
+        }
+    }
+}
